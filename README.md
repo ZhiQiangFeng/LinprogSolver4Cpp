@@ -1,2 +1,2 @@
-# LinprogSolverC-
-A C++ linprog solver for solve a large scales linear programming via interior point method.
+# LinprogSolver4C
+A C++ linprog solver for solve a large scaled linear programming via interior point method.
