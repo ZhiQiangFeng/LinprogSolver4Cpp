@@ -12,7 +12,7 @@ class Parameters
         Parameters()
         {
             maxIter = 50;
-            tol = 1e-08;
+            tol = 1e-12;
             verbose = 2;
             eta = 0.99995;
         }
