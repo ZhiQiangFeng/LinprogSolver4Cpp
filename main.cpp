@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     int mm, nn;
     const char *file = argv[1];
-    //const char *file = "data1.txt";
+    //const char *file = "data.txt";
     ifstream fin(file, std::fstream::in);
     cout << fin.is_open() << endl;
     fin >> mm >> nn;

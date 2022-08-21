@@ -2,7 +2,6 @@
 
 `LinprogSolver4C` is a small C++ library for solving **large-scale linear programming** problems via interior point method. 
 
----
 
 ## 1. What to do
 
@@ -22,16 +21,17 @@ $$
 which also can be writes like
 
 $$
+\begin{array}{c}
 \min\ \bf{cx}\ \ \textrm{s.t.}\left\{
 \begin{array}{l}
 \bf Ax=b,\\
 \bf x\succcurlyeq 0
 \end{array}\right.
+\end{array}
 $$
 
-with $\bf{A}\in{R}_{m\times n},x\in R_{n\times 1},b\in R_{m\times 1}$.
+with $\bf{A}\in R_{m\times n},x\in R_{n\times 1},b\in R_{m\times 1}$.
 
----
 
 ## 2. Normalization of constraints
 
@@ -47,7 +47,6 @@ with $\bf{A}\in{R}_{m\times n},x\in R_{n\times 1},b\in R_{m\times 1}$.
   
   - $x_{n+i}\pm\sum_{j=0}^{n}a_{ij}x_{j}=b_i, x_{n+i}\ge 0$
 
-----
 
 ## 3. Input data
 
@@ -95,7 +94,6 @@ It should be noted that the solution results obtained in above case are not so g
 
 **For large-scale linear programming(include integers and floats), the accuracy is acceptable.**
 
----
 
 ## 4. How to build
 
@@ -123,7 +121,6 @@ you will see `Makefile` created here, use `make` to get a executed file:
 make
 ```
 
----
 
 ## 5. How to use
 
@@ -133,29 +130,33 @@ make
 
 you will get these outputs in your terminal:
 
-> 1
-> 
-> LP problem:
->  Iter  Residual        Mu    Alphax    Alphas
->     0  2.70e-01  1.54e+00       ---       ---
->     1  1.24e-03  6.01e-02  1.00e+00  1.00e+00
->     2  7.97e-08  3.86e-06  1.00e+00  1.00e+00
->     3  3.99e-12  1.93e-10  1.00e+00  1.00e+00
->     4  2.06e-16  9.66e-15  1.00e+00  1.00e+00
-> 
-> ----------------------------
-> 
-> Optx:
->     1       7.5
->     2        12
->     3   2.4e-14
->     4   2.6e-14
->     5       7.5
-> 
-> ----------------------------
-> 
-> linprog Terminated. Status : 0
-> [Iters: 4] [Time: 2.82e-03s]
+```
+1
+
+LP problem:
+ Iter  Residual        Mu    Alphax    Alphas
+    0  2.70e-01  1.54e+00       ---       ---
+    1  1.24e-03  6.01e-02  1.00e+00  1.00e+00
+    2  7.97e-08  3.86e-06  1.00e+00  1.00e+00
+    3  3.99e-12  1.93e-10  1.00e+00  1.00e+00
+    4  2.06e-16  9.66e-15  1.00e+00  1.00e+00
+
+----------------------------
+
+Optx:
+    1       7.5
+    2        12
+    3   2.4e-14
+    4   2.6e-14
+    5       7.5
+
+----------------------------
+
+linprog Terminated. Status : 0
+[Iters: 4] [Time: 2.82e-03s]
+```
+
+The first integer output means the status of this solve:
 
 `0` - optimal
 
