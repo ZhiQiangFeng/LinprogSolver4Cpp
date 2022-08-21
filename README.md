@@ -21,16 +21,14 @@ $$
 which also can be writes like
 
 $$
-\begin{array}{c}
-\min\ \bf{cx}\ \ \textrm{s.t.}\left\{
-\begin{array}{l}
-\bf Ax=b,\\
-\bf x\succcurlyeq 0
-\end{array}\right.
+\begin{array}{rl}
+\min\ \ &\bf{cx}\\
+\textrm{s.t.}\ \ &\bf Ax=b\\
+&\bf x\succcurlyeq 0\\
 \end{array}
 $$
 
-with $\bf{A}\in R_{m\times n},x\in R_{n\times 1},b\in R_{m\times 1}$.
+with \$\bf{A}\in R_{m\times n},x\in R_{n\times 1},b\in R_{m\times 1}\$.
 
 
 ## 2. Normalization of constraints
