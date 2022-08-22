@@ -51,8 +51,8 @@ with \$\bf{A}\in R_{m\times n},x\in R_{n\times 1},b\in R_{m\times 1}\$.
 The code reads data from **TXT file** (data.txt):
 
 - The first line has two integers, `m` and `n`, indicating the number of constraints and the number of variables
-- The next **(m)** lines had **(n + 1)** floats in each line, the first (n) numbers in each line are the coefficients before the variables($a_{ij}$), and the last one is $b_i$
-- **(n)** numbers in the last line represent the coefficients before each variable in the objective function($c_i$)
+- **(n)** numbers in the second line represent the coefficients before each variable in the objective function $c_i$
+- The next **(m)** lines had **(n + 1)** floats in each line, the first (n) numbers in each line are the coefficients before the variables $a_{ij}$, and the last one is $b_i$
 
 For a sample:
 
