@@ -1,6 +1,6 @@
-# LinprogSolver4C ‒ Linear Programming Solver for Large-Scale Linear Programming
+# LinprogSolver4Cpp ‒ Linear Programming Solver for Large-Scale Linear Programming
 
-`LinprogSolver4C` is a small C++ library for solving **large-scale linear programming** problems via interior point method. 
+`LinprogSolver4Cpp` is a small C++ library for solving **large-scale linear programming** problems via interior point method. 
 
 
 ## 1. What to do
